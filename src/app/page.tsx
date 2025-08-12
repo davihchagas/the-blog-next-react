@@ -1,21 +1,13 @@
-import clsx from "clsx";
+import { PostList } from "@/components/PostsList";
+import { SpinLoader } from "@/components/SpinLoader";
+import { Suspense } from "react";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <div>
-      <h1
-        className={clsx(
-          "text-xl",
-          "font-bold",
-          "text-blue-200",
-          "hover:text-blue-600",
-          "hover:bg-amber-50",
-          "transition",
-          "duration-300"
-        )}
-      >
-        Texto
-      </h1>
+      <Suspense fallback={<SpinLoader />}>
+        <PostList />
+      </Suspense>
     </div>
   );
 }
