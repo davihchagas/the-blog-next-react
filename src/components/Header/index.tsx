@@ -1,18 +1,21 @@
-'use client';
 import clsx from "clsx";
+import Link from "next/link";
 
 export function Header() {
-  return (<h1 onClick={()=>alert('Oi')}
+  return (
+    <header>
+      <h1
         className={clsx(
-          "text-xl",
-          "font-bold",
-          "text-blue-200",
-          "hover:text-blue-600",
-          "hover:bg-amber-50",
-          "transition",
-          "duration-300"
+          "text-4xl/normal font-extrabold py-8",
+          "sm:text-5xl/normal sm:py-10",
+          "md:text-6xl/normal md:py-11",
+          "lg:text-7xl/normal lg:py-12",
+          "xl:text-8xl/normal xl:py-13",
+
         )}
       >
-        Texto
-      </h1>)
+        <Link href="#">The Blog</Link>
+      </h1>
+    </header>
+  );
 }
