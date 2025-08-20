@@ -22,7 +22,7 @@ export class JsonPostRepository implements PostRepository {
 
   async findAllPublic(): Promise<PostModel[]> {
     const posts = await this.readFromDisk();
-    return posts.filter(post => post.published);
+    return posts.filter((post: { published: unknown; }) => post.published);
   }
 
   async findById(id: string): Promise<PostModel> {
