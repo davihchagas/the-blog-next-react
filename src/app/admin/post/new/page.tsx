@@ -1,11 +1,12 @@
-import { Button } from "@/components/Button";
+import { InputText } from "@/components/InputText";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
-export  default async function AdminPostNewPage() {
-  return <div className="py-16 text-6xl flex gap-4">
-    <Button variant="default">Confirma</Button>
-    <Button variant="ghost">Confirma</Button>
-    <Button variant="danger">Confirma</Button>
-  </div>
+export default async function AdminPostNewPage() {
+  return (
+    <div>
+      <InputText labelText="Nome" placeholder="Digite seu nome"/>
+
+    </div>
+  );
 }
