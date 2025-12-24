@@ -4,7 +4,7 @@ type ButtonVariants = "default" | "ghost" | "danger";
 type ButtonSizes = "sm" | "md" | "lg";
 
 type ButtonProps = {
-  variant: ButtonVariants;
+  variant?: ButtonVariants;
   size?: ButtonSizes;
   children: React.ReactNode;
 } & React.ComponentProps<"button">;
@@ -55,7 +55,7 @@ export function Button({
   );
 
   return (
-    <button className={buttonClasses} {...props}>
+    <button {...props} className={buttonClasses} >
       {children}
     </button>
   );
