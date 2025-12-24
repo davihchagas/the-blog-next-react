@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Blog 📝
 
-## Getting Started
+A full-stack blog application built with **Next.js** that provides a modern, scalable, and secure platform for content creation and management.
 
-First, run the development server:
+## 📌 About the Project
+
+**The Blog** is a blog platform developed using **Next.js** and modern web technologies. It allows content creation and management through an **admin panel**, while providing a fast and responsive experience for readers.
+
+The project focuses on best practices in **full-stack development**, combining server-side features, database integration, and a clean, maintainable front-end architecture.
+
+## 🚀 Technologies Used
+
+- **Next.js** – Full-stack React framework  
+- **React** – Component-based UI library  
+- **TypeScript** – Static typing for better reliability and maintainability  
+- **Server Actions** – Handling server-side logic and data mutations  
+- **Middleware** – Route protection and request handling  
+- **Tailwind CSS** – Utility-first CSS framework  
+- **Drizzle ORM** – Type-safe database access  
+- **Admin Dashboard** – Content management interface  
+
+## ✨ Features
+
+- Public blog with dynamic posts  
+- Admin page for creating, editing, and deleting posts  
+- Secure routes handled by Next.js middleware  
+- Server Actions for database operations  
+- Type-safe data handling with Drizzle and TypeScript  
+- Responsive and modern UI built with Tailwind CSS  
+
+## 🧠 Concepts Applied
+
+- Full-stack development with Next.js  
+- Server Components and Server Actions  
+- Authentication and route protection with middleware  
+- Type-safe database integration using Drizzle ORM  
+- Clean architecture and separation of concerns  
+- Scalable project structure for real-world applications  
+
+## 📂 Project Structure
+
+The project is organized to separate concerns such as UI components, server actions, database schema, middleware, and admin pages, ensuring scalability and ease of maintenance.
+
+## ▶️ Getting Started
+
+Clone the repository and install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/davihchagas/the-blog-next-react
+cd the-blog
+npm install
